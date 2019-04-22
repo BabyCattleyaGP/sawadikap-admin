@@ -30,7 +30,7 @@
     <meta name="author" content="ThemePixels">
 
     <link rel="shortcut icon" href="<?php echo base_url()."../assets/img/civil-engineering.png"?>">
-    <title>Prestress Admin</title>
+    <title>Sawadikap Admin</title>
 
     <!-- vendor css -->
     <link href="<?php echo base_url()."assets/"?>/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
