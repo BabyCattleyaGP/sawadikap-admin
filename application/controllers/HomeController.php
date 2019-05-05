@@ -14,7 +14,7 @@ class HomeController extends CI_Controller {
 
 	public function index()
     {
-    	$data['getTotal'] = $this->db->query('select count(id) as total_user, (select count(id) as total_product from product) as total_product from users')->result();
+    	$data['getTotal'] = $this->db->query('select count(id_user) as total_user, (select count(id_pakaian) as total_product from tbl_pakaian) as total_product from tbl_user')->result();
 
         $query = $this->db->query("SELECT SUM(total_order) as count, MONTH(time) as month FROM orders where YEAR(`time`) = YEAR(CURDATE())
             GROUP BY MONTH(time) ORDER BY time"); 

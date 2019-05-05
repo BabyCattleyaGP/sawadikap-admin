@@ -10,26 +10,23 @@
       <div class="br-pagetitle">
         <i class="icon icon ion-ios-bookmarks-outline"></i>
         <div>
-          <h4>Daftar Users</h4>
-          <p class="mg-b-0">Daftar User Prestress.</p>
+          <h4>Daftar User</h4>
+          <p class="mg-b-0">Daftar User Sawadikap.</p>
         </div>
       </div><!-- d-flex -->
 
       <div class="br-pagebody">
         <div class="br-section-wrapper">
           <div class="table-wrapper">
-            <a href="<?php echo base_url()."users/create"?>"><button class="btn btn-info" style="margin-bottom: 25px">Create User</button></a>
             <div style="overflow-x:auto;">
             <table id="datatable1" class="table display responsive nowrap">
               <thead>
                 <tr>
-                  <th class="wd-15p">Nama</th>
+                  <th class="wd-15p">Fullname</th>
+                  <th class="wd-15p">Username</th>
                   <th class="wd-15p">Email</th>
-                  <th class="wd-15p">Mobile</th>
-                  <th class="wd-15p">Company</th>
                   <th class="wd-15p">Address</th>
                   <th class="wd-15p">Phone</th>
-                  <th class="wd-15p">Fax</th>
                   <th class="wd-15p">Action</th>
                 </tr>
               </thead>
@@ -37,19 +34,14 @@
 
                 <?php foreach($user as $row){?>
                 <tr>
-                  <td><?php echo $row->fname." ".$row->lname?></td>
+                  <td><?php echo $row->fullname?></td>
+                  <td><?php echo $row->username?></td>
                   <td><?php echo $row->email?></td>
-                  <td><?php echo $row->mobile?></td>
-                  <td><?php echo $row->company?></td>
                   <td><?php echo $row->address?></td>
                   <td><?php echo $row->phone?></td>
-                  <td><?php echo $row->fax?></td>
                   <td>
                     <a href="<?php echo base_url()."users/detail/".$row->id?>">
                       <button class="btn btn-info" style="margin-bottom: 25px">Detail</button>
-                    </a>
-                    <a href="<?php echo base_url()."users/update/".$row->id?>">
-                      <button class="btn btn-warning" style="margin-bottom: 25px">Edit</button>
                     </a>
                     <a href="<?php echo base_url('users/delete/'.$row->id) ?>">
                       <button class="btn btn-danger" style="margin-bottom: 25px">Delete</button>
