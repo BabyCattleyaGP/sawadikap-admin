@@ -9,8 +9,8 @@
 	<div class="br-pagetitle">
 		<i class="icon icon ion-ios-bookmarks-outline"></i>
 		<div>
-			<h4><?php echo $data[0]->fname?></h4>
-			<p class="mg-b-0"><?php echo $data[0]->lname?></p>
+			<h4><?php echo $data[0]->fullname?></h4>
+			<p class="mg-b-0"><?php echo $data[0]->username?></p>
 		</div>
 	</div><!-- d-flex -->
 
@@ -25,21 +25,21 @@
 					<div class="col-lg-12">
 						<div class="form-group">
 							<label class="form-control-label">ID: <span class="tx-danger">*</span></label>
-							<input class="form-control" value="<?php echo $data[0]->id?>" disabled>
+							<input class="form-control" value="<?php echo $data[0]->id_user?>" disabled>
 						</div>
 					</div>
 
 					<div class="col-lg-6">
 						<div class="form-group">
-							<label class="form-control-label">First Name: <span class="tx-danger">*</span></label>
-							<input class="form-control" value="<?php echo $data[0]->fname?>" disabled>
+							<label class="form-control-label">Full Name: <span class="tx-danger">*</span></label>
+							<input class="form-control" value="<?php echo $data[0]->fullname?>" disabled>
 						</div>
 					</div>
 
 					<div class="col-lg-6">
 						<div class="form-group">
-							<label class="form-control-label">Last Name: <span class="tx-danger">*</span></label>
-							<input class="form-control" value="<?php echo $data[0]->lname?>" disabled>
+							<label class="form-control-label">UserName: <span class="tx-danger">*</span></label>
+							<input class="form-control" value="<?php echo $data[0]->username?>" disabled>
 						</div>
 					</div>
 
@@ -47,27 +47,6 @@
 						<div class="form-group">
 							<label class="form-control-label">Email: <span class="tx-danger">*</span></label>
 							<input class="form-control" value="<?php echo $data[0]->email?>" disabled>
-						</div>
-					</div>
-
-					<div class="col-lg-6">
-						<div class="form-group">
-							<label class="form-control-label">Mobile: <span class="tx-danger">*</span></label>
-							<input class="form-control" value="<?php echo $data[0]->mobile?>" disabled>
-						</div>
-					</div>
-
-					<div class="col-lg-6">
-						<div class="form-group">
-							<label class="form-control-label">Company: <span class="tx-danger">*</span></label>
-							<input class="form-control" value="<?php echo $data[0]->company?>" disabled>
-						</div>
-					</div>
-
-					<div class="col-lg-6">
-						<div class="form-group">
-							<label class="form-control-label">City: <span class="tx-danger">*</span></label>
-							<input class="form-control" value="<?php echo $data[0]->city?>" disabled>
 						</div>
 					</div>
 
@@ -84,14 +63,6 @@
 							<input class="form-control" value="<?php echo $data[0]->phone?>" disabled>
 						</div>
 					</div>
-
-					<div class="col-lg-6">
-						<div class="form-group">
-							<label class="form-control-label">Fax: <span class="tx-danger">*</span></label>
-							<input class="form-control" value="<?php echo $data[0]->fax?>" disabled>
-						</div>
-					</div>
-
 
 
 

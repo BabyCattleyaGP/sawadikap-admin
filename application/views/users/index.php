@@ -40,10 +40,10 @@
                   <td><?php echo $row->address?></td>
                   <td><?php echo $row->phone?></td>
                   <td>
-                    <a href="<?php echo base_url()."users/detail/".$row->id?>">
+                    <a href="<?php echo base_url()."users/detail/".$row->id_user?>">
                       <button class="btn btn-info" style="margin-bottom: 25px">Detail</button>
                     </a>
-                    <a href="<?php echo base_url('users/delete/'.$row->id) ?>">
+                    <a href="<?php echo base_url('users/delete/'.$row->id_user) ?>">
                       <button class="btn btn-danger" style="margin-bottom: 25px">Delete</button>
                     </a>
                   </td>
