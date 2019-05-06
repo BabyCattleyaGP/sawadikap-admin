@@ -14,7 +14,9 @@ class HomeController extends CI_Controller {
 
 	public function index()
     {
-    	$data['getTotal'] = $this->db->query('select count(id_user) as total_user, (select count(id_pakaian) as total_product from tbl_pakaian) as total_product from tbl_user')->result();
+		$data['getTotal'] = $this->db->query('select count(id_user) as total_user, (select count(id_pakaian) as total_product from tbl_pakaian) as total_product from tbl_user')->result();
+		
+		/*
 
         $query = $this->db->query("SELECT SUM(total_order) as count, MONTH(time) as month FROM orders where YEAR(`time`) = YEAR(CURDATE())
             GROUP BY MONTH(time) ORDER BY time"); 
@@ -95,6 +97,8 @@ class HomeController extends CI_Controller {
 
 		$query = $this->db->query("SELECT id_product, SUM(jml_order) AS jml_order FROM ordered where YEAR(`time`) = YEAR(CURDATE()) - 1 AND MONTH(`time`) BETWEEN '12' AND '12' GROUP BY id_product");
 		$data['order24'] = $query->result();
+
+		*/
 
         $this->load->view('skins/header');
 		$this->load->view('dashboard/index', $data);
