@@ -11,4 +11,4 @@ App Information
 
 This repo contains in-development code for admin, dashboard page. 
 To view the mobile version for the main app visit `Sawadikap App
-<https://github.com/BabyCattleyaGP/sawadikap>`_ page.
+<https://github.com/muhamistau/sawadikap-java>`_ page.
